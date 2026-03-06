@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(135deg,#141e30,#243b55);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.card{
+background:white;
+padding:40px;
+border-radius:12px;
+width:420px;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+input{
+width:100%;
+padding:10px;
+margin:6px 0 14px 0;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+button{
+width:100%;
+padding:12px;
+border:none;
+background:#243b55;
+color:white;
+font-size:16px;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{
+background:#141e30;
+}
+
+.back{
+display:block;
+text-align:center;
+margin-top:20px;
+text-decoration:none;
+color:#243b55;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h2>Калькулятор для розрахунку валових викидів шкідливих речовин у вигляді суспендованих твердих частинок</h2>
+
+<form action="/calc/result" method="post">
+
+Донецьке газове вугілля марки ГР (т):
+<input name="masaVug">
+
+Високосірчастий мазут марки 40 (т):
+<input name="masaMaz">
+
+Природний газ із газопроводу Уренгой-Ужгород (м³):
+<input name="masaGas">
+
+<button type="submit">Розрахувати</button>
+
+</form>
+
+<a class="back" href="/">Назад</a>
+
+</div>
+
+</body>
+</html>
